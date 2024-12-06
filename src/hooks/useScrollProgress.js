@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 
-export const useScrollProgress = () => {
+const useScrollProgress = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { scrollYProgress } = useScroll();
 
@@ -13,3 +13,5 @@ export const useScrollProgress = () => {
 
   return { isScrolled, scrollYProgress };
 };
+
+export default useScrollProgress;
