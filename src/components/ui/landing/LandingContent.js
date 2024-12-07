@@ -3,16 +3,16 @@ import { GoArrowUpRight } from "react-icons/go";
 const LandingContent = () => {
   return (
     <div className="text-center text-gray-200 xl:text-left">
-      <span className="text-sm md:text-base lg:text-left lg:text-xl">
+      <span className="text-base md:text-xl lg:text-left lg:text-2xl">
         ☘️ I&apos;m Jorjis Hasan,
       </span>
-      <h1 className="my-4 text-3xl font-black leading-[1.4] md:text-5xl lg:my-4 lg:text-6xl">
+      <h1 className="mb-8 mt-4 text-5xl font-black leading-tight md:text-6xl md:leading-[1.4] lg:mb-6">
         10x <br />
         Full-Stack Software <br /> Developer
         <span className="text-purple-500"> .</span>
       </h1>
 
-      <div className="md:text-md mt-6 flex flex-col items-center justify-center gap-4 text-xs md:mt-10 md:text-sm lg:mt-16 lg:flex-row lg:text-lg xl:justify-normal">
+      <div className="md:text-md flex flex-col items-center justify-center gap-2 text-xs md:mt-10 lg:mt-16 lg:flex-row lg:gap-4 lg:text-lg xl:justify-normal">
         <button className="w-fit rounded-md bg-purple-500 px-8 py-3 font-medium text-white lg:py-4">
           Preview Resume
         </button>
