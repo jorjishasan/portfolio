@@ -89,3 +89,23 @@ export const notifications = [
     color: "#FFF6BD", // Soft Yellow
   },
 ];
+
+export const sectionIntros = {
+  projects: {
+    tag: "Projects",
+    title: "Landscape of Work",
+    description:
+      "These are a few of my Web2 projects, among many more to come. I love to grab real-world problems and create logical instructions for solving them through code. ",
+  },
+  articles: {
+    tag: "Blogs",
+    title: "20+ Articles",
+    description:
+      "These are a few of my Web2 projects, among many more to come. I love to grab real-world problems and create logical instructions for solving them through code. ",
+  },
+  tools: {
+    tag: "Tools & Tech",
+    title: "Start, Ship, Shape",
+    description: `These are the tools and tech that power my development process every day. For cloud solutions, I usually turn to GCP or AWS, depending on what fits best for the task at hand. Let’s do a free consult  for you.`,
+  },
+};
