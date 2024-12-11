@@ -1,6 +1,6 @@
 const IntroStarter = ({ tag, title, description }) => {
   return (
-    <div className="mx-auto mb-12 w-full text-center">
+    <div className="mx-auto mb-16 w-full text-center">
       <span className="mb-2 inline-block bg-purple-500/10 px-4 py-2 text-[10px] font-bold uppercase text-purple-800">
         {tag}
       </span>
