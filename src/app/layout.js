@@ -4,8 +4,8 @@ import Header from "@/components/sections/Header";
 import { NavProvider } from "@/contexts/NavContext";
 import Landing from "@/components/sections/Landing";
 import Projects from "@/components/sections/Projects";
+import Articles from "@/components/sections/Articles";
 import { Press_Start_2P } from "next/font/google";
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
         </NavProvider>
         <Landing />
         <Projects />
+        <Articles />
         <main className="pt-16">{children}</main>
       </body>
     </html>
