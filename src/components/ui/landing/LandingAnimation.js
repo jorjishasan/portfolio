@@ -1,6 +1,6 @@
 import AnimatedList from "./AnimatedList";
 import Notification from "./Notification";
-import { notifications } from "@/utils/constants";
+import { notifications } from "@/components/ui/landing/notificationConfig";
 const LandingAnimation = ({ className = "" }) => {
   return (
     <div
