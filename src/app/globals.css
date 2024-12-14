@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #ffffff;
+  --background: #171717;
 }
 
 body {
@@ -34,4 +27,30 @@ body {
 .overflow-x-auto {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.border-gradient {
+  position: relative;
+  background: transparent;
+}
+
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, black, rgb(53, 53, 54));
+  transform: translate(0, 1px);
+  z-index: -1;
+}
+
+.border-gradient > figure {
+  position: relative;
+  background: #000;
+  border-radius: 10px;
+  margin: 1px;
+  z-index: 1;
 }
