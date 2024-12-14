@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import cn from "@/utils/cn";
 import aeroupIcon from "@icon/aero-up.svg";
-import { socialLinks } from "@/utils/constants";
+import { profileLinks } from "@/utils/constants";
 
 const SocialLinks = () => {
-  return socialLinks.map((social) => (
+  const { social_links } = profileLinks;
+  return Object.values(social_links).map((social) => (
     <Link
       key={social.name}
       href={social.href}
