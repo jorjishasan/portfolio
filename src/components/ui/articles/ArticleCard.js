@@ -52,7 +52,7 @@ const ArticleCard = ({ article }) => {
             : article.title}
         </h2>
 
-        <div className="mt-4 flex justify-between gap-2">
+        <figcaption className="mt-4 flex justify-between gap-2">
           <div className="flex">
             {tagsArray.map((tag, index) => (
               <span
@@ -80,7 +80,7 @@ const ArticleCard = ({ article }) => {
               {"+"}
             </span>
           </div>
-        </div>
+        </figcaption>
       </div>
     </article>
   );
