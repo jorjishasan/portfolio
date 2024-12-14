@@ -7,6 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        // Padding values for vertical spacing
+        "section-padding-y": "2rem", // Default for mobile
+        "section-padding-y-md": "3rem", // For tablets
+        "section-padding-y-lg": "5rem", // For desktops
+
+        // Margin values for vertical spacing
+        "section-margin-y": "1.5rem", // Default for mobile
+        "section-margin-y-md": "2.5rem", // For tablets
+        "section-margin-y-lg": "3.5rem", // For desktops
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
