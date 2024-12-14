@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <div
-      className="mx-auto mt-16 px-4 py-8 md:mt-24 md:px-8 lg:mt-36 xl:mt-40"
+      className="mx-auto mt-section-margin-y p-4 py-section-padding-y md:mt-section-margin-y-md md:py-section-padding-y-md lg:mt-section-margin-y-lg lg:py-section-padding-y-lg"
       style={{ maxWidth: `${maxContainerWidth}px` }}
     >
       <IntroStarter {...projects} />
