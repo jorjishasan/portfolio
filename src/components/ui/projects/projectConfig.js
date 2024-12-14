@@ -7,7 +7,7 @@ export const projectData = [
   //     live: "https://yourproject1.com",
   //     youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   //   },
-  //   embed: `<iframe width="1280" height="720" src="https://www.youtube.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+  //   embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
   //   tags: ["React", "Next.js", "Tailwind CSS"],
   // },
   {
@@ -18,7 +18,7 @@ export const projectData = [
       live: "https://yourproject1.com",
       youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     },
-    embed: `<iframe width="1280" height="720" src="https://www.youtube.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
     tags: ["React", "Next.js", "Tailwind CSS"],
   },
   {
@@ -29,7 +29,7 @@ export const projectData = [
       live: "https://yourproject1.com",
       youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     },
-    embed: `<iframe width="1280" height="720" src="https://www.youtube.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
     tags: ["React", "Next.js", "Tailwind CSS"],
   },
   {
@@ -40,7 +40,7 @@ export const projectData = [
       live: "https://yourproject1.com",
       youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     },
-    embed: `<iframe width="1280" height="720" src="https://www.youtube.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
     tags: ["React", "Next.js", "Tailwind CSS"],
   },
 ];
