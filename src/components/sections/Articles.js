@@ -4,7 +4,7 @@ import ArticleWrapper from "../ui/articles/ArticleWrapper";
 
 const Articles = () => {
   return (
-    <div className="mx-auto mt-16 px-4 py-8 md:mt-24 md:px-8 lg:mt-36 xl:mt-40">
+    <div className="py-section-padding-y md:py-section-padding-y-md lg:py-section-padding-y-lg mt-section-margin-y md:mt-section-margin-y-md lg:mt-section-margin-y-lg mx-auto">
       <ArticleWrapper />
     </div>
   );
