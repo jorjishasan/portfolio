@@ -9,6 +9,7 @@ import CodingProfile from "@/components/sections/CodingProfile";
 import Skills from "@/components/sections/Skills";
 import Footer from "@/components/sections/Footer";
 import { Press_Start_2P, Caveat } from "next/font/google";
+import StructuredData from "@/components/StructuredData";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -106,6 +107,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${pressStart2P.variable} ${caveat.variable}`}
     >
+      <head>
+        <StructuredData />
+      </head>
       <body className="min-h-screen bg-black text-white antialiased">
         <NavProvider>
           <Header />
@@ -116,6 +120,7 @@ export default function RootLayout({ children }) {
           <Projects />
           <Skills />
           <Articles />
+          {children}
         </main>
         <Footer />
       </body>
