@@ -7,6 +7,7 @@ import Projects from "@/components/sections/Projects";
 import Articles from "@/components/sections/Articles";
 import CodingProfile from "@/components/sections/CodingProfile";
 import Skills from "@/components/sections/Skills";
+import Footer from "@/components/sections/Footer";
 import { Press_Start_2P, Caveat } from "next/font/google";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -50,12 +51,14 @@ export default function RootLayout({ children }) {
         <NavProvider>
           <Header />
         </NavProvider>
-        <Landing />
-        <CodingProfile />
-        <Projects />
-        <Skills />
-        <Articles />
-        <main className="pt-16">{children}</main>
+        <main>
+          <Landing />
+          <CodingProfile />
+          <Projects />
+          <Skills />
+          <Articles />
+        </main>
+        <Footer />
       </body>
     </html>
   );
