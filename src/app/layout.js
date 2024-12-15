@@ -37,8 +37,67 @@ const caveat = Caveat({
 });
 
 export const metadata = {
-  title: "Your Portfolio",
-  description: "Personal portfolio showcasing projects and experiences",
+  metadataBase: new URL("https://jorjishasan.com"),
+  title: {
+    default: "Jorjis Hasan | Full-Stack MERN Developer & UI/UX Designer",
+    template: "%s | Jorjis Hasan",
+  },
+  description:
+    "Expert MERN Stack Developer specializing in React, Next.js, Redux, and UI/UX Design. Creating scalable web applications and stunning user interfaces. Based in Bangladesh, working globally.",
+  keywords: [
+    "MERN Stack Developer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "UI Engineer",
+    "UX Designer",
+    "Frontend Developer",
+    "React Redux Developer",
+    "Jorjis Hasan",
+    "jorjishasan",
+    "Landing Page Developer",
+    "JavaScript Expert",
+    "Bangladesh Developer",
+  ],
+  creator: "Jorjis Hasan",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://jorjishasan.com",
+    title: "Jorjis Hasan | Full-Stack MERN Developer & UI/UX Designer",
+    description:
+      "Expert MERN Stack Developer specializing in React, Next.js, Redux, and UI/UX Design. Creating scalable web applications and stunning user interfaces.",
+    siteName: "Jorjis Hasan Portfolio",
+    images: [
+      {
+        url: "/og-image.jpg", // Create this image
+        width: 1200,
+        height: 630,
+        alt: "Jorjis Hasan - MERN Stack Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jorjis Hasan | Full-Stack MERN Developer & UI/UX Designer",
+    description:
+      "Expert MERN Stack Developer specializing in React, Next.js, Redux, and UI/UX Design.",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-verification-code",
+  },
 };
 
 export default function RootLayout({ children }) {
