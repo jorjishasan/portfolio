@@ -7,7 +7,10 @@ import SkillsWrapper from "../ui/skills/SkillsWrapper";
 const Skills = () => {
   const { tools } = sectionIntros;
   return (
-    <section className="mt-section-padding-y p-4 py-section-padding-y md:mt-section-padding-y-md md:py-section-padding-y-md lg:mt-section-padding-y-lg lg:py-section-padding-y-lg">
+    <section
+      id="tools"
+      className="mt-section-padding-y p-4 py-section-padding-y md:mt-section-padding-y-md md:py-section-padding-y-md lg:mt-section-padding-y-lg lg:py-section-padding-y-lg"
+    >
       <IntroStarter {...tools} />
       <SkillsWrapper />
     </section>
