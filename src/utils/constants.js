@@ -51,10 +51,10 @@ export const profileLinks = {
 };
 
 export const navItems = [
-  { name: "Hi", href: "/" },
+  { name: "🤌 Hola !", href: "/" },
   { name: "Projects", href: "/projects" },
-  { name: "Blogs", href: "/blogs" },
   { name: "Tools", href: "/tools" },
+  { name: "Articles", href: "/blogs" },
 ];
 
 export const sectionIntros = {
