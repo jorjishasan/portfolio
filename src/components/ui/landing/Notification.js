@@ -1,9 +1,9 @@
 "use client";
 
-const Notification = ({ name, description, icon, color, time, index }) => {
+const Notification = ({ name, description, icon, color, index }) => {
   return (
     <figure
-      className={`relative mx-auto min-h-fit w-full max-w-[400px] transform-gpu cursor-pointer overflow-hidden rounded-2xl bg-transparent p-4 pr-16 backdrop-blur-md transition-all duration-200 ease-in-out [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] hover:scale-[103%]`}
+      className={`relative mx-auto min-h-fit w-full transform-gpu cursor-pointer overflow-hidden rounded-2xl bg-transparent p-4 pr-16 backdrop-blur-md transition-all duration-200 ease-in-out [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] hover:scale-[103%]`}
     >
       <div className="flex flex-row items-center gap-3">
         <div
