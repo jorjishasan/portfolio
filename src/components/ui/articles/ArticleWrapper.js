@@ -5,11 +5,7 @@ import DesktopArticles from "./DesktopArticles";
 import IntroStarter from "../IntroStarter";
 import { sectionIntros } from "@/utils/constants";
 const ArticleWrapper = () => {
-  const { articles, loading } = useGetArticles();
-
-  if (loading) {
-    return <div>Loading articles...</div>;
-  }
+  const articles = useGetArticles();
 
   const filteredArticles = articles
     .filter((article) => article.cover_image)
