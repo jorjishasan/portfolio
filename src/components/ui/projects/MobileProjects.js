@@ -1,3 +1,4 @@
+"use client";
 import ProjectCard from "./ProjectCard";
 
 const MobileProjects = ({ projects }) => {

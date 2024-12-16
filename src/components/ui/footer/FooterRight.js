@@ -1,3 +1,4 @@
+"use client";
 import { profileLinks } from "@/utils/constants";
 import Link from "next/link";
 import Image from "next/image";

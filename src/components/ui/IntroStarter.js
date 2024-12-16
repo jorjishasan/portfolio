@@ -1,3 +1,5 @@
+"use client";
+
 const IntroStarter = ({ tag, title, description }) => {
   return (
     <div className="mx-auto mb-16 w-full text-center">

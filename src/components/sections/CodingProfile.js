@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import { maxContainerWidth, profileLinks } from "@/utils/constants";
@@ -8,7 +9,7 @@ const CodingProfile = () => {
   const { coding_profile } = sectionIntros;
   return (
     <div
-      className="py-section-padding-y md:py-section-padding-y-md lg:py-section-padding-y-lg mt-section-margin-y md:mt-section-padding-y-md lg:mt-section-padding-y-lg mx-auto flex w-full flex-col items-center justify-center px-3"
+      className="mx-auto mt-section-margin-y flex w-full flex-col items-center justify-center px-3 py-section-padding-y md:mt-section-padding-y-md md:py-section-padding-y-md lg:mt-section-padding-y-lg lg:py-section-padding-y-lg"
       style={{ maxWidth: maxContainerWidth }}
     >
       <h2 className="text-center text-xs font-semibold uppercase text-purple-500">

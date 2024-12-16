@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import footerDecoration from "../../../../public/footer_decoration.svg";
 const FooterLeft = () => {
