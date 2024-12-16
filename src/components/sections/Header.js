@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 z-50 w-full bg-white/90 backdrop-blur-xl dark:bg-gray-900/90",
+        "fixed top-0 z-50 w-full bg-white/80 backdrop-blur-xl dark:bg-black/80",
         isScrolled && "shadow-md",
       )}
     >
