@@ -75,7 +75,7 @@ const ArticleCard = ({ article }) => {
                 </span>
               ))}
             </div>
-            <span className="text-xs font-bold text-gray-500">
+            <span className="text-xs font-bold text-gray-300">
               {randomReactions}
               {"+"}
             </span>
