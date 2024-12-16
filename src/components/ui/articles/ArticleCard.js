@@ -48,12 +48,12 @@ const ArticleCard = ({ article }) => {
             }}
           ></div>
         )}
-        <div className="mt-4 flex items-center gap-2 text-[9px]">
+        <div className="mt-4 flex items-center gap-2 text-xs font-bold text-gray-400">
           <span>Blog</span>
-          <span className="h-1 w-1 rounded-full bg-gray-500"></span>
+          <span className="h-1 w-1 rounded-full bg-purple-500"></span>
           <span>{randomReads}k+ reads</span>
         </div>
-        <h2 className="mt-2 text-xl font-bold">
+        <h2 className="mt-[6px] text-xl font-bold">
           {article?.title.length > 26
             ? article.title.slice(0, 26) + "..."
             : article.title}
