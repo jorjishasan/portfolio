@@ -1,4 +1,3 @@
-import Link from "next/link";
 import cn from "@/utils/cn";
 import { navItems } from "@/utils/constants";
 import Hamburger from "./Hamburger";
@@ -41,14 +40,14 @@ const MobileNavLinks = () => {
       )}
     >
       {navItems.map((item) => (
-        <Link
+        <a
           key={item.name}
-          href={item.href}
+          href={`#${item.href}`}
           onClick={() => setIsHamburgerOpen(false)}
           className="block rounded-md px-3 py-2 text-base font-medium text-purple-400 hover:bg-white/10 hover:text-white"
         >
           {"⏤ " + item.name}
-        </Link>
+        </a>
       ))}
     </div>
   );
