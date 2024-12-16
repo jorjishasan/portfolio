@@ -10,6 +10,7 @@ import Skills from "@/components/sections/Skills";
 import Footer from "@/components/sections/Footer";
 import { Press_Start_2P, Caveat } from "next/font/google";
 import StructuredData from "@/components/StructuredData";
+import ClientRedirect from "@/components/ClientRedirect";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -101,7 +102,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout() {
   return (
     <html
       lang="en"
@@ -111,6 +112,7 @@ export default function RootLayout({ children }) {
         <StructuredData />
       </head>
       <body className="min-h-screen bg-black text-white antialiased">
+        <ClientRedirect />
         <NavProvider>
           <Header />
         </NavProvider>
@@ -120,7 +122,6 @@ export default function RootLayout({ children }) {
           <Projects />
           <Skills />
           <Articles />
-          {children}
         </main>
         <Footer />
       </body>
