@@ -1,29 +1,25 @@
 "use client";
 import { useState, useEffect } from "react";
 import { devtoAPI } from "@/components/ui/articles/articleConfig";
+import fallbackArticleData from "@/components/ui/articles/fallbackArticleData";
 
 const useGetArticles = () => {
-  const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [articles, setArticles] = useState(fallbackArticleData);
 
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        setLoading(true);
         const response = await fetch(`https://corsproxy.io/?url=${devtoAPI}`);
-        console.log(response);
         const data = await response.json();
         setArticles(data);
       } catch (error) {
         console.error("Error fetching articles:", error);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchArticles();
   }, []);
 
-  return { articles, loading };
+  return articles;
 };
 export default useGetArticles;
