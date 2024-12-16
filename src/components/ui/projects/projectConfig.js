@@ -1,4 +1,18 @@
+const baseYoutubeEmbed = (videoId) => `<iframe 
+  width="1280" 
+  height="720" 
+  src="https://www.youtube-nocookie.com/embed/${videoId}?rel=0&enablejsapi=1"
+  title="Project Demo" 
+  frameborder="0" 
+  loading="lazy"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>`;
+
 export const projectData = [
+  // First create the base embed structure
+
   // {
   //   name: "Fastkeys.dev",
   //   description: "Description of project 1",
@@ -7,7 +21,7 @@ export const projectData = [
   //     live: "https://yourproject1.com",
   //     youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   //   },
-  //   embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+  //   embed: baseYoutubeEmbed("vFW_TxKLyrE"),
   //   tags: ["React", "Next.js", "Tailwind CSS"],
   // },
   {
@@ -18,7 +32,7 @@ export const projectData = [
       live: "https://yourproject1.com",
       youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     },
-    embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    embed: baseYoutubeEmbed("vFW_TxKLyrE"),
     tags: ["React", "Next.js", "Tailwind CSS"],
   },
   {
@@ -29,7 +43,7 @@ export const projectData = [
       live: "https://yourproject1.com",
       youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     },
-    embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    embed: baseYoutubeEmbed("vFW_TxKLyrE"),
     tags: ["React", "Next.js", "Tailwind CSS"],
   },
   {
@@ -40,7 +54,7 @@ export const projectData = [
       live: "https://yourproject1.com",
       youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     },
-    embed: `<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/vFW_TxKLyrE" title="Expo in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    embed: baseYoutubeEmbed("vFW_TxKLyrE"),
     tags: ["React", "Next.js", "Tailwind CSS"],
   },
 ];
