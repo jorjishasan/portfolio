@@ -29,7 +29,7 @@ const ArticleCard = ({ article }) => {
         </button>
       </div>
       <div className="relative">
-        {article.cover_image && (
+        {article.cover_image ? (
           <Image
             src={article.cover_image}
             alt={article.title}
@@ -40,6 +40,13 @@ const ArticleCard = ({ article }) => {
             style={{ aspectRatio: "1000/420" }}
             priority={false}
           />
+        ) : (
+          <div
+            style={{
+              aspectRatio: "1000/420",
+              background: randomItemFrom(tagColors),
+            }}
+          ></div>
         )}
         <div className="mt-4 flex items-center gap-2 text-[9px]">
           <span>Blog</span>
