@@ -3,21 +3,22 @@ import { profileLinks } from "@/utils/constants";
 import Link from "next/link";
 import Image from "next/image";
 import Tooltip from "@/components/ui/Tooltip";
-import githubIcon from "@icon/github.svg";
+import gitthubIcon from "@icon/github_light.svg";
+import linkedinIcon from "@icon/linkedin_light.svg";
 const FooterRight = () => {
   const selectedLinks = {
     twitter: profileLinks.social_links.twitter,
+    linkedin: { ...profileLinks.social_links.linkedin, icon: linkedinIcon },
     devdotto: profileLinks.social_links.devdotto,
     github: {
       ...profileLinks.coding_profiles.github,
-      icon: githubIcon, // update with new icon
+      icon: gitthubIcon, // update with new icon
     },
-    linkedin: profileLinks.social_links.linkedin,
   };
 
   return (
-    <div className="flex flex-col gap-4 pb-4 lg:place-self-end">
-      <span className="flex items-center justify-center gap-4 md:gap-6 lg:gap-6 lg:place-self-start">
+    <div className="flex flex-col gap-2 lg:place-self-end lg:pb-4">
+      <span className="flex items-center justify-center gap-4 md:gap-6 lg:justify-between lg:place-self-start">
         {Object.values(selectedLinks).map((link) => (
           <Tooltip key={link.name} content={link.name}>
             <Link
