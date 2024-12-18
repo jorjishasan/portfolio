@@ -4,10 +4,10 @@ import LandingContent from "@/components/ui/landing/LandingContent";
 import LandingAnimation from "@/components/ui/landing/LandingAnimation";
 import cn from "@/utils/cn";
 import { maxContainerWidth } from "@/utils/constants";
-import { useIsDesktop } from "@/hooks/useIsDesktop";
+import { useApp } from "@/contexts/AppContext";
 
 const Landing = () => {
-  const isDesktop = useIsDesktop();
+  const { isDesktop } = useApp();
 
   return (
     <div
