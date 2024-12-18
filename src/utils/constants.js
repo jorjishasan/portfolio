@@ -13,17 +13,17 @@ export const profileLinks = {
     hacker_rank: {
       name: "HackerRank",
       icon: hackerRankIcon,
-      href: "https://hackerrank.com/yourusername",
+      href: "https://www.hackerrank.com/profile/jorjis",
     },
     github: {
       name: "GitHub",
       icon: githubIcon,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/jorjishasan",
     },
     leetcode: {
       name: "LeetCode",
       icon: leetcodeIcon,
-      href: "https://leetcode.com/yourusername",
+      href: "https://leetcode.com/u/jorjis/",
     },
   },
   social_links: {
