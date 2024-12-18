@@ -1,9 +1,9 @@
 import cn from "@/utils/cn";
-import { useNav } from "@/contexts/NavContext";
+import { useApp } from "@/contexts/AppContext";
 import { navItems } from "@/utils/constants";
 
 const DesktopNav = () => {
-  const { activeItem, setActiveItem } = useNav();
+  const { activeItem, setActiveItem } = useApp();
 
   return (
     <div className="hidden items-center space-x-8 lg:flex">
