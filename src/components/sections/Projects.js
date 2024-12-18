@@ -6,9 +6,11 @@ import { maxContainerWidth, sectionIntros } from "@/utils/constants";
 import DesktopProjects from "@/components/ui/projects/DesktopProjects";
 import MobileProjects from "@/components/ui/projects/MobileProjects";
 import { projectData } from "@/components/ui/projects/projectConfig";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 const Projects = () => {
   const { projects } = sectionIntros;
+  const isDesktop = useIsDesktop(); // 1280px is xl breakpoint
 
   return (
     <div
@@ -17,12 +19,11 @@ const Projects = () => {
       style={{ maxWidth: `${maxContainerWidth}px` }}
     >
       <IntroStarter {...projects} />
-      <div className="hidden xl:block">
+      {isDesktop ? (
         <DesktopProjects projects={projectData} />
-      </div>
-      <div className="xl:hidden">
+      ) : (
         <MobileProjects projects={projectData} />
-      </div>
+      )}
       <button className="text-gray group mx-auto mt-10 flex items-center gap-1 rounded-md border-[0.3px] border-gray-700 px-6 py-3 text-white transition-colors duration-300 hover:bg-purple-500">
         <span>Explore all projects</span>
         <GoArrowUpRight className="transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:scale-110" />
