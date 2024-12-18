@@ -1,17 +1,17 @@
 import cn from "@/utils/cn";
 import { navItems } from "@/utils/constants";
 import Hamburger from "./Hamburger";
-import { useNav } from "@/contexts/NavContext";
+import { useApp } from "@/contexts/AppContext";
 
 const MobileNav = () => {
-  const { isHamburgerOpen } = useNav();
+  const { isHamburgerOpen } = useApp();
   return (
     <>
       <Hamburger />
 
       <div
         className={cn(
-          "absolute left-0 right-0 top-full lg:hidden",
+          "absolute left-0 right-0 top-full",
           "bg-zinc-900/95 backdrop-blur-md",
           "border-t border-white/10",
           "origin-top transition-all duration-300 ease-out",
@@ -27,7 +27,7 @@ const MobileNav = () => {
 };
 
 const MobileNavLinks = () => {
-  const { isHamburgerOpen, setIsHamburgerOpen } = useNav();
+  const { isHamburgerOpen, setIsHamburgerOpen } = useApp();
 
   return (
     <div

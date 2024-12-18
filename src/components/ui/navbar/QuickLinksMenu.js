@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import cn from "@/utils/cn";
-import { useNav } from "@/contexts/NavContext";
+import { useApp } from "@/contexts/AppContext";
 import chevronIcon from "@icon/chevron.svg";
 import SocialLinks from "./SocialLinks";
 
 const QuickLinksMenu = () => {
   const { showQuickLinks, setShowQuickLinks, activeItem, setActiveItem } =
-    useNav();
+    useApp();
 
   const handleMouseEnter = () => {
     setShowQuickLinks(true);
@@ -21,7 +21,6 @@ const QuickLinksMenu = () => {
     clearTimeout(leaveTimeout);
     leaveTimeout = setTimeout(() => {
       if (!document.querySelector(".group:hover")) {
-        // Check if user is still hovering the component
         setShowQuickLinks(false);
         setActiveItem(null);
       }
