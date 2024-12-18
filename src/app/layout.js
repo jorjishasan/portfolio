@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/sections/Header";
-import { NavProvider } from "@/contexts/NavContext";
+import { AppProvider } from "@/contexts/AppContext";
 import Landing from "@/components/sections/Landing";
 import Projects from "@/components/sections/Projects";
 import Articles from "@/components/sections/Articles";
@@ -113,17 +113,17 @@ export default function RootLayout() {
       </head>
       <body className="min-h-screen bg-black text-white antialiased">
         <ClientRedirect />
-        <NavProvider>
+        <AppProvider>
           <Header />
-        </NavProvider>
-        <main>
-          <Landing />
-          <CodingProfile />
-          <Projects />
-          <Skills />
-          <Articles />
-        </main>
-        <Footer />
+          <main>
+            <Landing />
+            <CodingProfile />
+            <Projects />
+            <Skills />
+            <Articles />
+          </main>
+          <Footer />
+        </AppProvider>
       </body>
     </html>
   );
