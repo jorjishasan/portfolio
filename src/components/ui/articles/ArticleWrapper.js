@@ -4,11 +4,11 @@ import MobileArticles from "./MobileArticles";
 import DesktopArticles from "./DesktopArticles";
 import IntroStarter from "../IntroStarter";
 import { sectionIntros } from "@/utils/constants";
-import { useIsDesktop } from "@/hooks/useIsDesktop";
+import { useApp } from "@/contexts/AppContext";
 
 const ArticleWrapper = () => {
   const articles = useGetArticles();
-  const isDesktop = useIsDesktop();
+  const { isDesktop } = useApp();
 
   const filteredArticles = articles
     .filter((article) => article.cover_image)
