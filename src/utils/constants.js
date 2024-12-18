@@ -30,22 +30,22 @@ export const profileLinks = {
     twitter: {
       name: "Twitter",
       icon: twitterIcon,
-      href: "https://twitter.com/yourusername",
+      href: "https://x.com/jorjishasan_",
     },
     linkedin: {
       name: "LinkedIn",
       icon: linkedinIcon,
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/jorjishasan/",
     },
     gmail: {
       name: "Gmail",
       icon: gmailIcon,
-      href: "mailto:yourusername@gmail.com",
+      href: "mailto:speak.jorjis@gmail.com",
     },
     devdotto: {
       name: "Dev.to",
       icon: devdottoIcon,
-      href: "https://dev.to/yourusername",
+      href: "https://dev.to/jorjishasan",
     },
   },
 };
