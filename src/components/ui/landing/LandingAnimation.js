@@ -3,9 +3,10 @@ import Notification from "./Notification";
 import { notifications } from "@/components/ui/landing/notificationConfig";
 
 const LandingAnimation = () => {
+  console.log("animation still going");
   return (
     <div
-      className={`hidden h-[360px] -rotate-3 transform-gpu overflow-hidden transition-transform duration-200 xl:visible xl:flex`}
+      className={`flex h-[360px] -rotate-3 transform-gpu overflow-hidden transition-transform duration-200`}
     >
       <AnimatedList delay={1500}>
         {notifications.map((item, idx) => (
