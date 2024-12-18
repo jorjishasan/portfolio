@@ -6,11 +6,11 @@ import { maxContainerWidth, sectionIntros } from "@/utils/constants";
 import DesktopProjects from "@/components/ui/projects/DesktopProjects";
 import MobileProjects from "@/components/ui/projects/MobileProjects";
 import { projectData } from "@/components/ui/projects/projectConfig";
-import { useIsDesktop } from "@/hooks/useIsDesktop";
+import { useApp } from "@/contexts/AppContext";
 
 const Projects = () => {
   const { projects } = sectionIntros;
-  const isDesktop = useIsDesktop(); // 1280px is xl breakpoint
+  const { isDesktop } = useApp();
 
   return (
     <div
