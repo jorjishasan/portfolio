@@ -1,12 +1,12 @@
 import cn from "@/utils/cn";
-import { useNav } from "@/contexts/NavContext";
+import { useApp } from "@/contexts/AppContext";
 
 const HamburgerMenu = () => {
-  const { isHamburgerOpen, setIsHamburgerOpen } = useNav();
+  const { isHamburgerOpen, setIsHamburgerOpen } = useApp();
 
   return (
     <button
-      className="relative flex h-[30px] w-10 items-center justify-center rounded-[4px] border-[0.4px] border-gray-700/60 lg:hidden"
+      className="relative flex h-[30px] w-10 items-center justify-center rounded-[4px] border-[0.4px] border-gray-700/60 xl:hidden"
       onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
     >
       {/* Top Line */}
