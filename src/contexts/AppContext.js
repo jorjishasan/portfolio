@@ -1,37 +1,33 @@
 "use client";
+
 import { createContext, useContext, useState, useEffect } from "react";
 
 const AppContext = createContext({});
+export const useApp = () => useContext(AppContext);
 
 export function AppProvider({ children }) {
-  // Viewport state
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  // Nav states
+  // Initialize with null to avoid hydration mismatch
+  const [isDesktop, setIsDesktop] = useState(null);
   const [activeItem, setActiveItem] = useState(null);
   const [showQuickLinks, setShowQuickLinks] = useState(false);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
   useEffect(() => {
+    // Move initial check inside useEffect
     const checkIsDesktop = () => {
       setIsDesktop(window.innerWidth >= 1280);
     };
 
-    // Initial check
     checkIsDesktop();
-
-    // Add resize listener
     window.addEventListener("resize", checkIsDesktop);
-
-    // Cleanup
     return () => window.removeEventListener("resize", checkIsDesktop);
   }, []);
 
-  const value = {
-    // Viewport state
-    isDesktop,
+  // Don't render children until isDesktop is determined
+  if (isDesktop === null) return null;
 
-    // Nav states
+  const value = {
+    isDesktop,
     activeItem,
     setActiveItem,
     showQuickLinks,
@@ -42,11 +38,3 @@ export function AppProvider({ children }) {
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
-
-export const useApp = () => {
-  const context = useContext(AppContext);
-  if (context === undefined) {
-    throw new Error("useApp must be used within an AppProvider");
-  }
-  return context;
-};
