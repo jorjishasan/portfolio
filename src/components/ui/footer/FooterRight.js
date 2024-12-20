@@ -17,8 +17,8 @@ const FooterRight = () => {
   };
 
   return (
-    <div className="flex flex-col gap-2 lg:place-self-end lg:pb-4">
-      <span className="flex items-center justify-center gap-4 md:gap-6 lg:justify-between lg:place-self-start">
+    <div className="flex flex-col gap-3 lg:pb-4">
+      <span className="flex items-center justify-center gap-3 md:gap-6">
         {Object.values(selectedLinks).map((link) => (
           <Tooltip key={link.name} content={link.name}>
             <Link
@@ -32,7 +32,7 @@ const FooterRight = () => {
                 alt={link.name}
                 width={24}
                 height={24}
-                className="md:w-8 lg:w-10"
+                className="md:w-8"
               />
             </Link>
           </Tooltip>
