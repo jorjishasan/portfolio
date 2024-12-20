@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-
 import { maxContainerWidth, profileLinks } from "@/utils/constants";
 import ProfileCard from "@ui/codingprofile/ProfileCard";
 import { sectionIntros } from "@/utils/constants";
+
 const CodingProfile = () => {
   const { coding_profiles } = profileLinks;
   const { coding_profile } = sectionIntros;
