@@ -17,7 +17,7 @@ const FooterLeft = () => {
 
 const InputBox = () => {
   return (
-    <div className="flex flex-col items-center gap-12 rounded-[16px] border border-gray-800 px-4 py-6 md:w-[500px] md:flex-row lg:px-6 lg:pb-12">
+    <div className="flex flex-col items-center gap-12 rounded-[16px] border border-gray-800 px-4 py-6 md:w-[500px] md:flex-row md:pb-12 lg:px-6 lg:pb-14">
       <input
         type="text"
         placeholder="Why microservice over monolith ?"
