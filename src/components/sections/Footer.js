@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="mt-section-padding-y bg-[#070707] p-4 py-section-padding-y md:mt-section-margin-y-md md:py-section-padding-y-md lg:mt-section-margin-y-lg lg:py-section-padding-y-lg">
       <div
-        className="mx-auto flex flex-col items-center justify-center gap-12 md:gap-16"
+        className="mx-auto flex flex-col items-center justify-center gap-12 md:gap-16 xl:gap-[96px]"
         style={{ maxWidth: maxContainerWidth }}
       >
         <FooterLeft />
