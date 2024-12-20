@@ -23,7 +23,7 @@ const InputBox = () => {
         placeholder="Why microservice over monolith ?"
         className="w-full place-self-start text-wrap bg-transparent text-xl text-gray-300 placeholder-gray-500 outline-none"
       />
-      <button className="rounded-lg bg-purple-600 px-8 py-3 text-lg text-white transition-colors hover:bg-purple-600 md:text-[24px] xl:px-16 xl:py-4">
+      <button className="rounded-lg bg-purple-600 px-8 py-3 text-lg text-white transition-colors hover:bg-purple-600 xl:px-12 xl:py-3 xl:text-[24px]">
         Send
       </button>
     </div>
