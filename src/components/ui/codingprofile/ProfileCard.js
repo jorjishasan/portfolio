@@ -16,6 +16,7 @@ const ProfileCard = ({
   const { name, icon, href } = profile;
 
   const cardRef = useRef(null);
+  const linkRef = useRef(null);
   const mouseX = useMotionValue(-gradientSize);
   const mouseY = useMotionValue(-gradientSize);
 
@@ -71,8 +72,9 @@ const ProfileCard = ({
         "group relative flex size-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-gray-900 bg-neutral-900/30 bg-clip-padding px-8 py-6 backdrop-blur-md backdrop-saturate-150 backdrop-filter md:py-10 lg:py-12 xl:py-16",
         className,
       )}
+      onClick={() => linkRef.current.click()}
     >
-      <Link href={href} target="_blank">
+      <Link href={href} target="_blank" ref={linkRef}>
         <Image
           src={icon}
           alt={name}
