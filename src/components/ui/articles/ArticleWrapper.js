@@ -10,7 +10,8 @@ const ArticleWrapper = () => {
   const articles = useGetArticles();
   const { isDesktop } = useApp();
 
-  const filteredArticles = articles
+  // Defensive: keep UI from crashing even if upstream data is unexpected.
+  const filteredArticles = (Array.isArray(articles) ? articles : [])
     .filter((article) => article.cover_image)
     .sort((a, b) => b.public_reactions_count - a.public_reactions_count);
 
